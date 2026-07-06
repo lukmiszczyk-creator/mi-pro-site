@@ -1,0 +1,116 @@
+{
+  "seo": {
+    "title": "MI-PRO | Instalacje premium HVAC i wod-kan",
+    "description": "MI-PRO – kompleksowe realizacje instalacji sanitarnych, HVAC i wod-kan, montaż klimatyzacji, opinie techniczne, nadzory i optymalizacja dokumentacji."
+  },
+  "navigation": {
+    "cta": "Wyślij zapytanie"
+  },
+  "hero": {
+    "eyebrow": "Technika. Precyzja. Wartość.",
+    "title": "Instalacje premium dla wymagających inwestycji",
+    "subtitle": "HVAC · wod-kan · montaż klimatyzacji · opinie techniczne · nadzory · optymalizacja dokumentacji",
+    "primary_button": "Umów konsultację",
+    "secondary_button": "Zobacz realizacje",
+    "points": [
+      "Kompleksowe realizacje",
+      "Jedna odpowiedzialność",
+      "Doświadczenie w projektach premium"
+    ]
+  },
+  "values": [
+    {
+      "title": "Kompleksowość",
+      "description": "Od koncepcji i dokumentacji, po realizację i uruchomienie."
+    },
+    {
+      "title": "Precyzja",
+      "description": "Każdy detal ma znaczenie – technicznie i wykonawczo."
+    },
+    {
+      "title": "Doświadczenie",
+      "description": "Wiedza poparta praktyką w inwestycjach prywatnych i komercyjnych."
+    }
+  ],
+  "services_intro": {
+    "eyebrow": "Zakres",
+    "title": "Usługi",
+    "description": "Mniej deklaracji, więcej odpowiedzialności za efekt końcowy."
+  },
+  "services": [
+    {
+      "icon": "▣",
+      "title": "Realizacje instalacji",
+      "description": "Kompleksowe wykonawstwo instalacji sanitarnych, HVAC i wod-kan."
+    },
+    {
+      "icon": "❄",
+      "title": "Montaż klimatyzacji",
+      "description": "Montaż, uruchomienie i estetyczne wdrożenie systemów klimatyzacji."
+    },
+    {
+      "icon": "≈",
+      "title": "HVAC i wod-kan",
+      "description": "Wentylacja, klimatyzacja, ogrzewanie oraz instalacje sanitarne."
+    },
+    {
+      "icon": "⌘",
+      "title": "Opinie i optymalizacje",
+      "description": "Ekspertyzy techniczne, nadzory i optymalizacja dokumentacji."
+    }
+  ],
+  "realizations": {
+    "eyebrow": "Wybrane realizacje",
+    "title": "Standard wykonania, którego oczekują klienci premium",
+    "description": "MI-PRO prowadzi realizacje tam, gdzie liczy się estetyka, jakość wykonania, terminowość i pełna kontrola nad procesem.",
+    "bullets": [
+      "Instalacje HVAC i wod-kan",
+      "Koordynacja techniczna i nadzór",
+      "Rozwiązania dopasowane do obiektu"
+    ]
+  },
+  "expertise": {
+    "eyebrow": "Ekspertyza",
+    "title": "Opinie techniczne i optymalizacja dokumentacji",
+    "description": "Rzetelne analizy. Bezpieczne decyzje. Lepsze parametry i sprawniejsza realizacja inwestycji.",
+    "items": [
+      {
+        "title": "Opinie techniczne",
+        "description": "Ocena rozwiązań i ryzyk wykonawczych."
+      },
+      {
+        "title": "Nadzory",
+        "description": "Wsparcie na etapie realizacji i odbiorów."
+      },
+      {
+        "title": "Optymalizacje",
+        "description": "Usprawnienia dokumentacji i kosztów."
+      },
+      {
+        "title": "Kompletność",
+        "description": "Jasne rekomendacje i konkretny kierunek działań."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Porozmawiajmy o Twojej inwestycji",
+    "description": "Najprostsza droga to telefon lub mail. Odpowiadamy konkretnie i bez zbędnego formalizmu.",
+    "company": "MI-PRO Łukasz Miszczyk",
+    "address": "ul. Edmunda Massalskiego 12/LU1\n25-636 Kielce",
+    "nip": "657-273-34-51",
+    "email": "biuro@mi-pro.pl",
+    "phone_display": "500-386-295",
+    "phone_href": "+48500386295"
+  },
+  "footer": {
+    "description": "MI-PRO – realizacje instalacji, HVAC, wod-kan, montaż klimatyzacji, opinie techniczne, nadzory i optymalizacje dokumentacji."
+  },
+  "cookies": {
+    "title": "Szanujemy prywatność.",
+    "description": "Ta strona korzysta z niezbędnych plików cookies oraz – wyłącznie po Twojej zgodzie – z opcjonalnych cookies analitycznych i marketingowych.",
+    "settings_button": "Ustawienia",
+    "reject_button": "Odrzuć opcjonalne",
+    "accept_button": "Akceptuję"
+  }
+}

@@ -1,0 +1,115 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+locale: "pl"
+
+collections:
+  - name: "settings"
+    label: "Treści strony"
+    files:
+      - file: "content/site.json"
+        label: "Strona główna"
+        name: "homepage"
+        format: "json"
+        fields:
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - { label: "Tytuł strony", name: "title", widget: "string" }
+              - { label: "Opis SEO", name: "description", widget: "text" }
+          - label: "Nawigacja"
+            name: "navigation"
+            widget: "object"
+            fields:
+              - { label: "Przycisk w menu", name: "cta", widget: "string" }
+          - label: "Sekcja główna / Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Mały napis nad nagłówkiem", name: "eyebrow", widget: "string" }
+              - { label: "Nagłówek", name: "title", widget: "string" }
+              - { label: "Opis", name: "subtitle", widget: "text" }
+              - { label: "Przycisk główny", name: "primary_button", widget: "string" }
+              - { label: "Przycisk drugi", name: "secondary_button", widget: "string" }
+              - label: "Punkty pod hero"
+                name: "points"
+                widget: "list"
+                field: { label: "Tekst", name: "text", widget: "string" }
+          - label: "Wartości"
+            name: "values"
+            widget: "list"
+            fields:
+              - { label: "Tytuł", name: "title", widget: "string" }
+              - { label: "Opis", name: "description", widget: "text" }
+          - label: "Wstęp usług"
+            name: "services_intro"
+            widget: "object"
+            fields:
+              - { label: "Mały napis", name: "eyebrow", widget: "string" }
+              - { label: "Nagłówek", name: "title", widget: "string" }
+              - { label: "Opis", name: "description", widget: "text" }
+          - label: "Usługi"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Ikona / znak", name: "icon", widget: "string", required: false }
+              - { label: "Tytuł", name: "title", widget: "string" }
+              - { label: "Opis", name: "description", widget: "text" }
+          - label: "Realizacje"
+            name: "realizations"
+            widget: "object"
+            fields:
+              - { label: "Mały napis", name: "eyebrow", widget: "string" }
+              - { label: "Nagłówek", name: "title", widget: "string" }
+              - { label: "Opis", name: "description", widget: "text" }
+              - label: "Punkty"
+                name: "bullets"
+                widget: "list"
+                field: { label: "Tekst", name: "text", widget: "string" }
+          - label: "Ekspertyza"
+            name: "expertise"
+            widget: "object"
+            fields:
+              - { label: "Mały napis", name: "eyebrow", widget: "string" }
+              - { label: "Nagłówek", name: "title", widget: "string" }
+              - { label: "Opis", name: "description", widget: "text" }
+              - label: "Elementy"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Tytuł", name: "title", widget: "string" }
+                  - { label: "Opis", name: "description", widget: "text" }
+          - label: "Kontakt"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Mały napis", name: "eyebrow", widget: "string" }
+              - { label: "Nagłówek", name: "title", widget: "string" }
+              - { label: "Opis", name: "description", widget: "text" }
+              - { label: "Nazwa firmy", name: "company", widget: "string" }
+              - { label: "Adres", name: "address", widget: "text" }
+              - { label: "NIP", name: "nip", widget: "string" }
+              - { label: "E-mail", name: "email", widget: "string" }
+              - { label: "Telefon wyświetlany", name: "phone_display", widget: "string" }
+              - { label: "Telefon link", name: "phone_href", widget: "string" }
+          - label: "Stopka"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Opis w stopce", name: "description", widget: "text" }
+          - label: "Cookies – teksty banera"
+            name: "cookies"
+            widget: "object"
+            fields:
+              - { label: "Tytuł", name: "title", widget: "string" }
+              - { label: "Opis", name: "description", widget: "text" }
+              - { label: "Przycisk ustawienia", name: "settings_button", widget: "string" }
+              - { label: "Przycisk odrzuć", name: "reject_button", widget: "string" }
+              - { label: "Przycisk akceptuj", name: "accept_button", widget: "string" }
