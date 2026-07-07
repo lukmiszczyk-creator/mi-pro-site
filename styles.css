@@ -321,38 +321,19 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
   align-items: center;
 }
 .owner-portrait {
-  min-height: 560px;
+  aspect-ratio: 4 / 5;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  display: grid;
-  place-items: center;
-  background:
-    radial-gradient(circle at 50% 24%, rgba(200,157,83,.18), transparent 24%),
-    linear-gradient(90deg, rgba(241,240,236,.045) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(241,240,236,.035) 1px, transparent 1px),
-    var(--surface);
-  background-size: auto, 42px 42px, 42px 42px, auto;
+  overflow: hidden;
+  background: var(--surface);
   box-shadow: var(--shadow);
 }
-.owner-portrait div {
-  width: min(68%, 330px);
-  aspect-ratio: 4 / 5;
-  border: 1px solid rgba(200,157,83,.38);
-  display: grid;
-  place-items: center;
-  text-align: center;
-}
-.owner-portrait span {
-  display: block;
-  font-size: 2rem;
-  line-height: 1;
-  font-weight: 950;
-}
-.owner-portrait small {
-  color: rgba(200,157,83,.8);
-  text-transform: uppercase;
-  letter-spacing: .12em;
-  font-weight: 800;
+.owner-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 52%;
+  filter: saturate(.9) contrast(1.04) brightness(.92);
 }
 .owner-list,
 .scope-list {
@@ -602,7 +583,6 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
     grid-template-columns: 1fr;
   }
   .service-feature-alt .service-image { order: 0; }
-  .owner-portrait { min-height: 460px; }
   .site-nav { gap: .75rem; }
   .site-nav a { font-size: .86rem; }
 }
@@ -706,7 +686,6 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
   .service-copy h3 { font-size: 1.55rem; }
   .service-image img,
   .highlight-image img { aspect-ratio: 4 / 3; }
-  .owner-portrait { min-height: 360px; }
   .cookie-banner { left: .5rem; right: .5rem; bottom: .5rem; }
   .cookie-modal-panel { padding: 1.4rem; }
 }
