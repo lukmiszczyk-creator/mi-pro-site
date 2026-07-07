@@ -17,14 +17,14 @@
   "values": [],
   "services_intro": {
     "eyebrow": "Zakres usług",
-    "title": "Instalacje prowadzone z praktyczną odpowiedzialnością",
-    "description": ""
+    "title": "Zakres usług",
+    "description": "Wykonawstwo, klimatyzacja i wsparcie techniczne dla inwestorów, Generalnych Wykonawców oraz klientów prywatnych."
   },
   "services": [
     {
       "icon": "01",
       "title": "Wykonawstwo instalacji",
-      "description": "Wentylacja, klimatyzacja, instalacje grzewcze, chłodnicze i wodno-kanalizacyjne.",
+      "description": "Wentylacja, klimatyzacja, instalacje grzewcze, chłodnicze i wodno-kanalizacyjne. Od przygotowania zakresu po uruchomienie i odbiór.",
       "link_text": "Poznaj zakres wykonawstwa",
       "link_href": "#kontakt"
     },
@@ -46,15 +46,15 @@
   "why": {
     "eyebrow": "Standard MI-PRO",
     "title": "Praktyczne podejście do instalacji",
-    "description": "Decyzje techniczne powinny uwzględniać nie tylko projekt, ale również wykonanie, serwis i późniejsze użytkowanie.",
+    "description": "Rozwiązania techniczne oceniamy nie tylko na etapie projektu, ale również pod kątem wykonania, serwisu i późniejszego użytkowania.",
     "items": [
       {
         "title": "Jasny zakres",
-        "description": "Zakres, odpowiedzialność i sposób działania ustalamy przed rozpoczęciem współpracy."
+        "description": "Przed rozpoczęciem współpracy określamy odpowiedzialność, założenia i wymagane materiały."
       },
       {
         "title": "Wykonalne rozwiązania",
-        "description": "Oceniamy rozwiązania pod kątem technicznym, montażowym i eksploatacyjnym."
+        "description": "Oceniamy rozwiązania pod kątem technicznym, montażowym, kosztowym i eksploatacyjnym."
       },
       {
         "title": "Kontrola wykonania",
@@ -67,9 +67,9 @@
     "title": "Doświadczenie, które stoi za MI-PRO",
     "description": "MI-PRO prowadzi Łukasz Miszczyk, specjalista z ponad 15-letnim doświadczeniem w realizacji, koordynacji i technicznej ocenie instalacji HVAC oraz sanitarnych. Praktyczne spojrzenie na cały proces pozwala łączyć wymagania projektu, możliwości wykonawcze i oczekiwany efekt techniczny.",
     "points": [
-      "ponad 15 lat doświadczenia",
+      "15+ lat doświadczenia",
       "HVAC i instalacje sanitarne",
-      "doświadczenie od dokumentacji do odbioru"
+      "Od dokumentacji do odbioru"
     ]
   },
   "process": {
@@ -130,7 +130,7 @@
     "phone_href": "+48500386295"
   },
   "footer": {
-    "description": "Wykonawstwo, koordynacja i techniczne wsparcie instalacji od dokumentacji do odbioru."
+    "description": "Wykonawstwo instalacji HVAC i sanitarnych oraz wsparcie techniczne."
   },
   "cookies": {
     "title": "Szanujemy prywatność.",
