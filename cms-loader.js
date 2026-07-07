@@ -51,7 +51,7 @@
     setText('.hero-actions .btn-gold', data.hero?.primary_button);
     setText('.hero-actions .btn-outline', data.hero?.secondary_button);
     setHref('.hero-actions .btn-gold', '#kontakt');
-    setHref('.hero-actions .btn-outline', '#uslugi');
+    setHref('.hero-actions .btn-outline', '#proces');
 
     const heroPoints = q('.hero-points');
     if (heroPoints && Array.isArray(data.hero?.points)) {
@@ -84,6 +84,7 @@
           <div class="icon">${escapeHtml(service.icon || '•')}</div>
           <h3>${escapeHtml(service.title)}</h3>
           <p>${escapeHtml(service.description)}</p>
+          ${service.link_text ? `<a href="${escapeHtml(service.link_href || '#kontakt')}">${escapeHtml(service.link_text)}</a>` : ''}
         </article>
       `).join('');
     }

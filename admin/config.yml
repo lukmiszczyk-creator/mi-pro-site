@@ -62,6 +62,8 @@ collections:
               - { label: "Ikona / znak", name: "icon", widget: "string", required: false }
               - { label: "Tytuł", name: "title", widget: "string" }
               - { label: "Opis", name: "description", widget: "text" }
+              - { label: "Tekst linku", name: "link_text", widget: "string", required: false }
+              - { label: "Adres linku", name: "link_href", widget: "string", required: false }
           - label: "Dlaczego MI-PRO"
             name: "why"
             widget: "object"
