@@ -12,6 +12,15 @@
     if (el && href) el.setAttribute('href', href);
   }
 
+  function setSectionHead(selector, data) {
+    const root = q(selector);
+    if (!root || !data) return;
+    setText('.eyebrow', data.eyebrow, root);
+    setText('h2', data.title, root);
+    const p = q('p:last-child', root);
+    if (p && data.description) p.textContent = data.description;
+  }
+
   function escapeHtml(value) {
     return String(value || '')
       .replace(/&/g, '&amp;')
@@ -41,6 +50,7 @@
     setText('.hero .lead', data.hero?.subtitle);
     setText('.hero-actions .btn-gold', data.hero?.primary_button);
     setText('.hero-actions .btn-outline', data.hero?.secondary_button);
+    setHref('.hero-actions .btn-gold', '#kontakt');
     setHref('.hero-actions .btn-outline', '#uslugi');
 
     const heroPoints = q('.hero-points');
@@ -78,6 +88,61 @@
       `).join('');
     }
 
+    if (data.why) {
+      setSectionHead('#dlaczego .section-head', data.why);
+      const wrap = q('#dlaczego .reason-grid');
+      if (wrap && Array.isArray(data.why.items)) {
+        wrap.innerHTML = data.why.items.map(item => `
+          <article><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.description)}</p></article>
+        `).join('');
+      }
+    }
+
+    if (data.owner) {
+      setText('#onas .eyebrow', data.owner.eyebrow);
+      setText('#onas h2', data.owner.title);
+      const p = q('#onas .owner-panel p:not(.eyebrow)');
+      if (p) p.textContent = data.owner.description || '';
+      const list = q('#onas .owner-list');
+      if (list && Array.isArray(data.owner.points)) {
+        list.innerHTML = data.owner.points.map(item => `<li>${escapeHtml(item)}</li>`).join('');
+      }
+    }
+
+    if (data.process) {
+      setSectionHead('#proces .section-head', data.process);
+      const wrap = q('#proces .process-grid');
+      if (wrap && Array.isArray(data.process.items)) {
+        wrap.innerHTML = data.process.items.map((item, index) => `
+          <article class="process-step reveal show">
+            <span>${String(index + 1).padStart(2, '0')}</span>
+            <h3>${escapeHtml(item.title)}</h3>
+            <p>${escapeHtml(item.description)}</p>
+          </article>
+        `).join('');
+      }
+    }
+
+    if (data.investment_types) {
+      setSectionHead('#inwestycje .section-head', data.investment_types);
+      const list = q('#inwestycje .tag-list');
+      if (list && Array.isArray(data.investment_types.items)) {
+        list.innerHTML = data.investment_types.items.map(item => `<span>${escapeHtml(item)}</span>`).join('');
+      }
+    }
+
+    if (data.climate) {
+      setText('#klimatyzacja .eyebrow', data.climate.eyebrow);
+      setText('#klimatyzacja h2', data.climate.title);
+      const p = q('#klimatyzacja .climate-copy p:not(.eyebrow)');
+      if (p) p.textContent = data.climate.description || '';
+      setText('#klimatyzacja .btn', data.climate.button);
+      const panel = q('#klimatyzacja .technical-panel');
+      if (panel && Array.isArray(data.climate.items)) {
+        panel.innerHTML = data.climate.items.map(item => `<span>${escapeHtml(item)}</span>`).join('');
+      }
+    }
+
     if (data.expertise) {
       setText('#ekspertyza .eyebrow', data.expertise.eyebrow);
       setText('#ekspertyza h2', data.expertise.title);
@@ -87,6 +152,27 @@
       if (mini && Array.isArray(data.expertise.items)) {
         mini.innerHTML = data.expertise.items.map(item => `
           <div><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.description)}</span></div>
+        `).join('');
+      }
+    }
+
+    if (data.problems) {
+      setSectionHead('#problemy .section-head', data.problems);
+      const list = q('#problemy .problem-list');
+      if (list && Array.isArray(data.problems.items)) {
+        list.innerHTML = data.problems.items.map(item => `<li>${escapeHtml(item)}</li>`).join('');
+      }
+    }
+
+    if (data.testimonials) {
+      setSectionHead('#opinie .section-head', data.testimonials);
+      const wrap = q('#opinie .testimonial-grid');
+      if (wrap && Array.isArray(data.testimonials.items)) {
+        wrap.innerHTML = data.testimonials.items.map(item => `
+          <figure class="testimonial reveal show">
+            <blockquote>${escapeHtml(item.quote)}</blockquote>
+            <figcaption>${escapeHtml(item.author)}</figcaption>
+          </figure>
         `).join('');
       }
     }

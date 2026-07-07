@@ -41,8 +41,8 @@ button { font: inherit; }
 }
 .nav-wrap { display: flex; align-items: center; justify-content: space-between; min-height: 82px; gap: 1rem; }
 .brand img { width: 180px; height: auto; }
-.site-nav { display: flex; align-items: center; gap: 2rem; }
-.site-nav a { color: var(--muted); font-weight: 600; transition: .2s ease; }
+.site-nav { display: flex; align-items: center; gap: 1.1rem; }
+.site-nav a { color: var(--muted); font-weight: 600; font-size: .95rem; transition: .2s ease; }
 .site-nav a:hover { color: var(--text); }
 .nav-cta { padding: .85rem 1.2rem; border-radius: var(--radius); background: var(--navy); color: #fff !important; }
 .nav-toggle {
@@ -50,7 +50,7 @@ button { font: inherit; }
 }
 .nav-toggle span { display: block; width: 26px; height: 2px; background: var(--navy); margin: 5px 0; border-radius: 99px; }
 
-.hero { padding: 3.4rem 0 1.4rem; }
+.hero { padding: 3.4rem 0 1.4rem; background: radial-gradient(circle at 82% 12%, rgba(200,157,83,.12), transparent 34%); }
 .hero-grid {
   display: grid; grid-template-columns: 1fr 1.1fr; gap: 2rem; align-items: center;
 }
@@ -65,7 +65,7 @@ button { font: inherit; }
   line-height: 1.05;
   overflow-wrap: anywhere;
 }
-.hero h1 { font-size: clamp(2.45rem, 3.7vw, 4.65rem); margin: 0; max-width: 15ch; overflow-wrap: break-word; }
+.hero h1 { font-size: clamp(2.45rem, 3.7vw, 4.65rem); margin: 0; max-width: 17ch; overflow-wrap: break-word; }
 .lead { font-size: 1.08rem; color: var(--muted); max-width: 50ch; margin: 1.25rem 0 0; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin: 2rem 0; }
 .btn {
@@ -76,6 +76,7 @@ button { font: inherit; }
 .btn-gold { background: linear-gradient(135deg, var(--gold), var(--gold-2)); color: #fff; box-shadow: 0 16px 30px rgba(200,157,83,.25); }
 .btn-outline { background: transparent; color: var(--navy); border-color: rgba(7,26,52,.18); }
 .dark-outline { border-color: rgba(255,255,255,.18); color: #fff; }
+.contact-section .dark-outline { border-color: rgba(7,26,52,.18); color: var(--navy); }
 .btn-ghost { background: #fff; color: var(--text); border-color: rgba(14,29,52,.14); }
 .hero-points {
   list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem;
@@ -88,11 +89,11 @@ button { font: inherit; }
   isolation: isolate;
 }
 .hero-visual img {
-  border-radius: 12px; box-shadow: var(--shadow); width: 100%; aspect-ratio: 16/11; object-fit: cover;
+  border-radius: 12px; box-shadow: var(--shadow); width: 100%; aspect-ratio: 16/10; object-fit: cover;
   border: 1px solid rgba(14,29,52,.08);
 }
 .hero-visual::after {
-  content: "HVAC / WOD-KAN / NADZOR";
+  content: "ANALIZA / WYKONANIE / ODBIÓR";
   position: absolute;
   left: 1rem;
   bottom: 1rem;
@@ -126,10 +127,12 @@ button { font: inherit; }
 .value-grid p { margin: 0; color: rgba(255,255,255,.74); }
 
 .section { padding: 4rem 0; }
+.section-soft { background: var(--surface-soft); }
 .section-dark { background: linear-gradient(180deg, var(--navy) 0%, #081f3f 100%); color: #fff; }
 .section-head { max-width: 740px; margin-bottom: 2rem; }
 .section-head h2 { font-size: clamp(2rem, 3vw, 3.2rem); margin: 0; }
 .section-head p:last-child { color: var(--muted); }
+.section-dark .section-head p:last-child { color: rgba(255,255,255,.7); }
 .cards {
   display: grid; gap: 1.2rem;
 }
@@ -144,10 +147,10 @@ button { font: inherit; }
 .card h3 { margin: 0 0 .45rem; font-size: 1.2rem; }
 .card p { margin: 0; color: var(--muted); }
 
-.featured-grid, .expertise-grid, .contact-grid {
+.split-grid, .featured-grid, .expertise-grid, .contact-grid, .owner-grid, .investment-grid, .climate-grid, .problems-grid {
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; align-items: center;
 }
-.featured-copy h2, .expertise-copy h2, .contact-section h2 { font-size: clamp(2rem, 3vw, 3.4rem); margin: 0 0 1rem; }
+.featured-copy h2, .expertise-copy h2, .contact-section h2, .owner-panel h2, .climate-copy h2 { font-family: "Georgia", "Times New Roman", serif; font-size: clamp(2rem, 3vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; }
 .featured-copy p, .expertise-copy p, .contact-section p { color: rgba(255,255,255,.75); }
 .featured-image img, .expertise-image img {
   border-radius: 12px; box-shadow: var(--shadow); width: 100%;
@@ -165,16 +168,98 @@ button { font: inherit; }
 .mini-grid strong { display: block; margin-bottom: .25rem; }
 .mini-grid span { color: var(--muted); font-size: .96rem; }
 
+.reason-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;
+}
+.reason-grid article, .owner-panel, .owner-list, .testimonial, .contact-form {
+  background: rgba(255,255,255,.94); border: 1px solid rgba(14,29,52,.08); border-radius: var(--radius); box-shadow: var(--shadow);
+}
+.reason-grid article { padding: 1.25rem; }
+.reason-grid h3, .process-step h3 { margin: 0 0 .45rem; }
+.reason-grid p, .owner-panel p, .process-step p, .problem-list, .testimonial blockquote, .climate-copy p { color: var(--muted); margin: 0; }
+
+.owner-grid { align-items: stretch; }
+.owner-panel { padding: 1.6rem; }
+.owner-list {
+  list-style: none; padding: 1.4rem; margin: 0; display: grid; gap: 1rem;
+}
+.owner-list li {
+  position: relative; padding-left: 1.4rem; color: var(--text); font-weight: 650;
+}
+.owner-list li::before {
+  content: ""; position: absolute; left: 0; top: .6rem; width: .45rem; height: .45rem; border-radius: 50%; background: var(--gold);
+}
+
+.process-grid {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.12); border-radius: 12px; overflow: hidden;
+}
+.process-step {
+  padding: 1.3rem; background: rgba(255,255,255,.045); min-height: 230px;
+}
+.process-step span {
+  display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: var(--radius); background: rgba(200,157,83,.14); color: var(--gold-2); font-weight: 800; margin-bottom: 1rem;
+}
+.process-step p { color: rgba(255,255,255,.7); }
+
+.tag-list {
+  display: flex; flex-wrap: wrap; gap: .75rem;
+}
+.tag-list span, .technical-panel span {
+  border: 1px solid rgba(14,29,52,.1); border-radius: var(--radius); background: #fff; color: var(--text); padding: .8rem 1rem; font-weight: 650;
+}
+
+.climate-section {
+  background: linear-gradient(135deg, #071a34 0%, #0b254a 100%); color: #fff;
+}
+.climate-copy p { color: rgba(255,255,255,.72); margin-bottom: 1.4rem; }
+.technical-panel {
+  position: relative; display: grid; gap: .8rem; padding: 1.3rem; border-radius: 12px;
+  background: linear-gradient(135deg, rgba(255,255,255,.1), rgba(255,255,255,.035)); border: 1px solid rgba(255,255,255,.14); box-shadow: var(--shadow);
+}
+.technical-panel::before {
+  content: ""; position: absolute; inset: 1rem; border: 1px solid rgba(200,157,83,.22); pointer-events: none;
+}
+.technical-panel span {
+  background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.14); color: rgba(255,255,255,.88);
+}
+
+.problem-list {
+  list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: .8rem;
+}
+.problem-list li {
+  background: #fff; border: 1px solid rgba(14,29,52,.08); border-left: 3px solid rgba(200,157,83,.72); border-radius: var(--radius); padding: 1rem;
+}
+
+.testimonial-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;
+}
+.testimonial { margin: 0; padding: 1.4rem; }
+.testimonial blockquote { font-size: 1.05rem; }
+.testimonial figcaption { margin-top: 1rem; color: var(--gold); font-weight: 800; }
+
 .contact-section { background: var(--surface-soft); }
 .contact-grid { align-items: stretch; }
 .contact-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.4rem; }
 .contact-card {
   background: #fff; border-radius: 12px; padding: 1.5rem; box-shadow: var(--shadow); display: grid; gap: 1rem;
 }
+.compact-card { margin-top: 1.4rem; }
 .contact-item { padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
 .contact-item:last-child { border-bottom: 0; padding-bottom: 0; }
 .contact-item.split { display: flex; justify-content: space-between; gap: 1rem; }
 .contact-card a { color: var(--navy); font-weight: 600; }
+.contact-form {
+  padding: 1.4rem; display: grid; gap: 1rem;
+}
+.contact-form label {
+  display: grid; gap: .35rem; color: var(--text); font-weight: 700;
+}
+.contact-form input, .contact-form select, .contact-form textarea {
+  width: 100%; border: 1px solid rgba(14,29,52,.14); border-radius: var(--radius); padding: .85rem .9rem; background: #fff; color: var(--text);
+}
+.contact-form textarea { resize: vertical; }
+.form-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.hidden-field { display: none; }
 
 .site-footer {
   background: linear-gradient(180deg, var(--navy) 0%, #06152a 100%);
@@ -247,11 +332,15 @@ button { font: inherit; }
 .reveal-delay-1 { transition-delay: .08s; }
 .reveal-delay-2 { transition-delay: .16s; }
 .reveal-delay-3 { transition-delay: .24s; }
+.reveal-delay-4 { transition-delay: .32s; }
 
 @media (max-width: 1100px) {
   .cards-4 { grid-template-columns: repeat(2, 1fr); }
-  .hero-grid, .featured-grid, .expertise-grid, .contact-grid { grid-template-columns: 1fr; }
+  .hero-grid, .split-grid, .featured-grid, .expertise-grid, .contact-grid, .owner-grid, .investment-grid, .climate-grid, .problems-grid { grid-template-columns: 1fr; }
   .hero h1 { max-width: 15ch; }
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
+  .site-nav { gap: .75rem; }
+  .site-nav a { font-size: .88rem; }
 }
 
 @media (max-width: 840px) {
@@ -261,7 +350,9 @@ button { font: inherit; }
   }
   .site-nav.open { display: flex; }
   .nav-toggle { display: inline-block; }
-  .hero-points, .value-grid, .mini-grid { grid-template-columns: 1fr; }
+  .hero-points, .value-grid, .mini-grid, .reason-grid, .problem-list, .testimonial-grid, .form-row { grid-template-columns: 1fr; }
+  .process-grid { grid-template-columns: 1fr; }
+  .process-step { min-height: auto; }
   .footer-top, .footer-bottom, .cookie-inner { flex-direction: column; align-items: flex-start; }
   .cookie-actions, .cookie-modal-actions { width: 100%; justify-content: stretch; }
   .cookie-actions .btn, .cookie-modal-actions .btn { flex: 1 1 100%; }

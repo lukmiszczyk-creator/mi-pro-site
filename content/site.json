@@ -1,91 +1,204 @@
 {
   "seo": {
     "title": "MI-PRO | Montaż klimatyzacji Kielce, HVAC i instalacje sanitarne",
-    "description": "MI-PRO wykonuje montaż klimatyzacji w Kielcach, instalacje HVAC, wod-kan i instalacje sanitarne dla wymagających inwestorów prywatnych oraz komercyjnych."
+    "description": "MI-PRO realizuje montaż klimatyzacji w Kielcach, instalacje HVAC, wentylację, wod-kan i instalacje sanitarne z inżynierskim podejściem do jakości, dokumentacji i odbioru."
   },
   "navigation": {
-    "cta": "Wyślij zapytanie"
+    "cta": "Zapytaj o wycenę"
   },
   "hero": {
-    "eyebrow": "Montaż klimatyzacji, HVAC i instalacje sanitarne",
-    "title": "Premium wykonawstwo instalacji dla wymagających inwestycji",
-    "subtitle": "MI-PRO realizuje klimatyzację, HVAC, wod-kan i instalacje sanitarne w domach, lokalach oraz obiektach komercyjnych. Stawiamy na estetykę montażu, porządek na budowie i rozwiązania dobrane do standardu inwestycji.",
-    "primary_button": "Zapytaj o montaż",
-    "secondary_button": "Zobacz zakres usług",
+    "eyebrow": "HVAC • klimatyzacja • instalacje sanitarne",
+    "title": "Kompleksowe wykonawstwo instalacji HVAC i sanitarnych",
+    "subtitle": "Wspieramy inwestorów, firmy wykonawcze i klientów prywatnych w realizacji instalacji wentylacyjnych, klimatyzacyjnych, grzewczych, chłodniczych oraz wodno-kanalizacyjnych. Od analizy dokumentacji po wykonanie, uruchomienie i odbiór.",
+    "primary_button": "Prześlij zapytanie",
+    "secondary_button": "Poznaj zakres usług",
     "points": [
-      "Montaż klimatyzacji",
-      "Instalacje HVAC i wod-kan",
-      "Estetyka i jakość wykonania"
+      "Instalacje prowadzone odpowiedzialnie",
+      "Montaż klimatyzacji Kielce i okolice",
+      "Wykonawstwo, nadzór i techniczna analiza"
     ]
   },
   "values": [
     {
-      "title": "Standard premium",
-      "description": "Dbamy o estetykę tras, detale montażowe i kulturę pracy na inwestycji."
+      "title": "Odpowiedzialność techniczna",
+      "description": "Decyzje projektowe i wykonawcze oceniamy pod kątem montażu, użytkowania, odbioru oraz późniejszego serwisu."
     },
     {
-      "title": "Kompletna realizacja",
-      "description": "Od doboru rozwiązań i uzgodnień, po montaż, uruchomienie i odbiór."
+      "title": "Przewidywalny proces",
+      "description": "Zakres, materiały, harmonogram i ustalenia techniczne prowadzimy w sposób uporządkowany i czytelny dla inwestora."
     },
     {
-      "title": "Techniczna pewność",
-      "description": "Wykonujemy instalacje tak, aby były trwałe, serwisowalne i wygodne w użytkowaniu."
+      "title": "Kontrola jakości",
+      "description": "Zwracamy uwagę na prowadzenie instalacji, dostęp serwisowy, estetykę wykonania i jakość zakończenia prac."
     }
   ],
   "services_intro": {
     "eyebrow": "Zakres usług",
     "title": "Wykonawstwo instalacji dla domów, lokali i obiektów komercyjnych",
-    "description": "Główny zakres MI-PRO to realizacja instalacji. Ekspertyzy, nadzory i optymalizacje traktujemy jako dodatkowe wsparcie techniczne dla inwestorów."
+    "description": "MI-PRO łączy praktykę wykonawczą z technicznym podejściem do dokumentacji, kosztów i koordynacji. Głównym zakresem jest realizacja instalacji; opinie, nadzory i optymalizacje są dodatkowym wsparciem dla wymagających inwestycji."
   },
   "services": [
     {
-      "icon": "❄",
-      "title": "Montaż klimatyzacji",
-      "description": "Dobór, montaż i uruchomienie klimatyzacji w Kielcach i okolicy, z naciskiem na estetyczne prowadzenie instalacji, komfort i cichą pracę systemu."
+      "icon": "01",
+      "title": "Wykonawstwo instalacji",
+      "description": "Wentylacja mechaniczna, klimatyzacja, VRF, instalacje grzewcze i chłodnicze, wod-kan oraz źródła ciepła."
     },
     {
-      "icon": "≈",
-      "title": "Instalacje HVAC",
-      "description": "Realizacja i koordynacja instalacji wentylacji, klimatyzacji i ogrzewania w standardzie dopasowanym do inwestycji."
+      "icon": "02",
+      "title": "Klimatyzacja",
+      "description": "Montaż klimatyzacji w domach, apartamentach, biurach i lokalach usługowych, z naciskiem na estetykę i komfort użytkowania."
     },
     {
-      "icon": "▣",
-      "title": "Instalacje sanitarne i wod-kan",
-      "description": "Wykonanie oraz modernizacja instalacji wodno-kanalizacyjnych i sanitarnych w budynkach prywatnych oraz komercyjnych."
-    },
-    {
-      "icon": "⌘",
+      "icon": "03",
       "title": "Wsparcie techniczne",
-      "description": "Opinie techniczne, nadzory i optymalizacje dokumentacji jako uzupełnienie prac wykonawczych."
+      "description": "Analiza dokumentacji, opinie techniczne, audyty, konsultacje wykonawcze i wsparcie w sporach technicznych."
+    },
+    {
+      "icon": "04",
+      "title": "Optymalizacja i nadzór",
+      "description": "Koordynacja instalacji, optymalizacja rozwiązań, weryfikacja kosztów oraz kontrola jakości wykonania."
     }
   ],
-  "expertise": {
-    "eyebrow": "Dodatkowe wsparcie techniczne",
-    "title": "Wsparcie techniczne przy wymagających instalacjach",
-    "description": "W projektach wymagających większej kontroli możemy wesprzeć inwestora opinią techniczną, nadzorem lub optymalizacją dokumentacji. To dodatek do praktyki wykonawczej, nie teoria oderwana od budowy.",
+  "why": {
+    "eyebrow": "Dlaczego MI-PRO",
+    "title": "Inżynierskie podejście bez zbędnego marketingu",
+    "description": "Nie komplikujemy rozwiązań bez potrzeby. Szukamy instalacji trwałych, racjonalnych kosztowo i możliwych do poprawnego wykonania.",
     "items": [
       {
-        "title": "Ocena rozwiązań",
-        "description": "Sprawdzenie, czy przyjęte rozwiązania instalacyjne są sensowne wykonawczo i eksploatacyjnie."
+        "title": "Doświadczenie wykonawcze",
+        "description": "Decyzje techniczne oceniamy nie tylko na podstawie projektu, ale także pod kątem montażu, eksploatacji, odbioru i serwisu."
       },
       {
-        "title": "Nadzór nad jakością",
-        "description": "Kontrola kluczowych etapów prac, detali montażowych i zgodności z ustaleniami."
+        "title": "Jedna odpowiedzialność",
+        "description": "Klient otrzymuje partnera odpowiedzialnego za koordynację zakresu, komunikację i jakość wykonania."
       },
       {
-        "title": "Optymalizacja dokumentacji",
-        "description": "Wskazanie uproszczeń, ryzyk i zmian, które mogą poprawić koszt lub jakość realizacji."
+        "title": "Praktyczne podejście",
+        "description": "Wskazujemy rozwiązania, które mają sens techniczny, kosztowy i organizacyjny na etapie realizacji."
       },
       {
-        "title": "Koordynacja branż",
-        "description": "Pomoc w uporządkowaniu ustaleń między inwestorem, projektantem i wykonawcami."
+        "title": "Kontrola detali",
+        "description": "Dbamy o przebieg tras, dostęp do serwisu, estetykę, dokumentację i jakość końcowego odbioru."
+      }
+    ]
+  },
+  "owner": {
+    "eyebrow": "O nas",
+    "title": "Doświadczenie, które stoi za MI-PRO",
+    "description": "MI-PRO zostało stworzone przez Łukasza Miszczyka, inżyniera i menedżera z wieloletnim doświadczeniem w realizacji instalacji HVAC i sanitarnych. Doświadczenie obejmuje prowadzenie procesów wykonawczych, koordynację zespołów, współpracę z projektantami, inwestorami i generalnymi wykonawcami, a także rozwiązywanie problemów technicznych na etapie realizacji i odbiorów.",
+    "points": [
+      "Ponad 15 lat doświadczenia w branży",
+      "Zarządzanie realizacją instalacji",
+      "Znajomość procesu od dokumentacji do odbioru",
+      "Praktyka w obiektach mieszkaniowych, komercyjnych i technicznych"
+    ]
+  },
+  "process": {
+    "eyebrow": "Jak pracujemy",
+    "title": "Przewidywalny proces od analizy do odbioru",
+    "items": [
+      {
+        "title": "Analiza zakresu",
+        "description": "Weryfikujemy dokumentację, potrzeby inwestora i warunki techniczne."
+      },
+      {
+        "title": "Dobór rozwiązania",
+        "description": "Porównujemy warianty techniczne, koszty i możliwości wykonania."
+      },
+      {
+        "title": "Przygotowanie realizacji",
+        "description": "Ustalamy harmonogram, materiały, koordynację i organizację prac."
+      },
+      {
+        "title": "Wykonanie",
+        "description": "Kontrolujemy jakość, prowadzimy bieżące uzgodnienia i odpowiadamy za zakres."
+      },
+      {
+        "title": "Uruchomienie i odbiór",
+        "description": "Sprawdzamy działanie, regulujemy instalację, porządkujemy dokumentację i przekazujemy zakres."
+      }
+    ]
+  },
+  "investment_types": {
+    "eyebrow": "Typy inwestycji",
+    "title": "Pracujemy tam, gdzie instalacje wymagają porządku i odpowiedzialności",
+    "description": "Wspieramy klientów prywatnych, firmy i inwestorów realizujących bardziej złożone zakresy instalacyjne.",
+    "items": [
+      "Budynki mieszkaniowe",
+      "Apartamenty i domy o wysokim standardzie",
+      "Biura i lokale usługowe",
+      "Obiekty komercyjne",
+      "Małe obiekty przemysłowe",
+      "Przebudowy i modernizacje",
+      "Inwestycje wymagające analizy technicznej"
+    ]
+  },
+  "climate": {
+    "eyebrow": "Montaż klimatyzacji Kielce",
+    "title": "Klimatyzacja dopasowana do wnętrza i sposobu użytkowania",
+    "description": "Dobieramy urządzenia nie tylko pod względem mocy. Uwzględniamy akustykę, estetykę, lokalizację jednostek, sposób prowadzenia instalacji i dostęp serwisowy.",
+    "button": "Zapytaj o klimatyzację",
+    "items": [
+      "Systemy split i multi-split",
+      "Małe systemy VRF",
+      "Domy, apartamenty i biura",
+      "Lokale usługowe",
+      "Uruchomienie, serwis i przeglądy"
+    ]
+  },
+  "expertise": {
+    "eyebrow": "Wsparcie techniczne i opinie",
+    "title": "Techniczna ocena przed podjęciem decyzji",
+    "description": "Celem opinii nie jest tworzenie rozbudowanych dokumentów bez praktycznej wartości. Każde opracowanie powinno prowadzić do jednoznacznych wniosków, możliwych działań i oceny odpowiedzialności technicznej.",
+    "items": [
+      {
+        "title": "Opinie techniczne",
+        "description": "Ocena wykonanych instalacji, analiza błędów i wskazanie możliwych działań."
+      },
+      {
+        "title": "Weryfikacja dokumentacji",
+        "description": "Sprawdzenie projektu pod kątem wykonania, kolizji, kosztów i ryzyk."
+      },
+      {
+        "title": "Optymalizacja projektu",
+        "description": "Wskazanie zmian, które mogą poprawić funkcjonalność, koszt lub jakość realizacji."
+      },
+      {
+        "title": "Wsparcie w odbiorach",
+        "description": "Techniczna kontrola zakresu i pomoc w uporządkowaniu ustaleń między stronami."
+      }
+    ]
+  },
+  "problems": {
+    "eyebrow": "Problemy, które pomagamy rozwiązać",
+    "title": "Technika, koszty i komunikacja w jednym miejscu",
+    "items": [
+      "Instalacja nie osiąga wymaganej wydajności",
+      "Dokumentacja koliduje z architekturą lub innymi branżami",
+      "Koszty instalacji przekraczają założony budżet",
+      "Wykonawca i projektant mają odmienne stanowiska",
+      "Urządzenia są źle dobrane do sposobu użytkowania",
+      "Inwestor potrzebuje niezależnej opinii technicznej"
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Opinie klientów",
+    "title": "Rzeczowa współpraca i jasne decyzje",
+    "items": [
+      {
+        "quote": "Bardzo dobry kontakt, rzeczowa analiza i jasne wskazanie rozwiązań. Wszystko zostało wykonane zgodnie z ustaleniami.",
+        "author": "Inwestor prywatny, Kielce"
+      },
+      {
+        "quote": "Konkretne podejście do dokumentacji i wykonania. Otrzymaliśmy czytelne wnioski oraz propozycje dalszych działań.",
+        "author": "Klient biznesowy, woj. świętokrzyskie"
       }
     ]
   },
   "contact": {
     "eyebrow": "Kontakt",
-    "title": "Zapytaj o montaż klimatyzacji w Kielcach lub instalacje",
-    "description": "Napisz, jakiego zakresu dotyczy inwestycja: klimatyzacja, HVAC, wod-kan lub instalacje sanitarne. W odpowiedzi wskażemy, jakie informacje są potrzebne do przygotowania konkretnej propozycji.",
+    "title": "Prześlij podstawowe informacje o inwestycji",
+    "description": "Napisz, jakiego zakresu dotyczy temat: wykonawstwo instalacji, montaż klimatyzacji w Kielcach, opinia techniczna, nadzór lub optymalizacja dokumentacji. Wrócimy z informacją, czy możemy pomóc oraz jakie dane będą potrzebne do dalszej analizy.",
     "company": "MI-PRO Łukasz Miszczyk",
     "address": "ul. Edmunda Massalskiego 12/LU1\n25-636 Kielce",
     "nip": "657-273-34-51",
@@ -94,7 +207,7 @@
     "phone_href": "+48500386295"
   },
   "footer": {
-    "description": "MI-PRO – montaż klimatyzacji, instalacje HVAC, wod-kan i instalacje sanitarne dla klientów oczekujących wysokiego standardu wykonania."
+    "description": "MI-PRO – odpowiedzialne wykonawstwo instalacji HVAC, montaż klimatyzacji, instalacje sanitarne, nadzory i techniczne wsparcie inwestycji."
   },
   "cookies": {
     "title": "Szanujemy prywatność.",
