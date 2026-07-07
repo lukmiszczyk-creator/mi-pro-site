@@ -146,18 +146,6 @@ collections:
                 name: "items"
                 widget: "list"
                 field: { label: "Tekst", name: "text", widget: "string" }
-          - label: "Opinie"
-            name: "testimonials"
-            widget: "object"
-            fields:
-              - { label: "Mały napis", name: "eyebrow", widget: "string" }
-              - { label: "Nagłówek", name: "title", widget: "string" }
-              - label: "Opinie"
-                name: "items"
-                widget: "list"
-                fields:
-                  - { label: "Treść", name: "quote", widget: "text" }
-                  - { label: "Podpis", name: "author", widget: "string" }
           - label: "Kontakt"
             name: "contact"
             widget: "object"

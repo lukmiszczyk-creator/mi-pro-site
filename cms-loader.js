@@ -51,7 +51,7 @@
     setText('.hero-actions .btn-gold', data.hero?.primary_button);
     setText('.hero-actions .btn-outline', data.hero?.secondary_button);
     setHref('.hero-actions .btn-gold', '#kontakt');
-    setHref('.hero-actions .btn-outline', '#proces');
+    setHref('.hero-actions .btn-outline', '#uslugi');
 
     const heroPoints = q('.hero-points');
     if (heroPoints && Array.isArray(data.hero?.points)) {
@@ -79,8 +79,10 @@
 
     const cardsWrap = q('#uslugi .cards');
     if (cardsWrap && Array.isArray(data.services)) {
+      const motifs = ['motif-air', 'motif-water', 'motif-climate', 'motif-control'];
       cardsWrap.innerHTML = data.services.map((service, i) => `
         <article class="card reveal show">
+          <div class="abstract-motif ${motifs[i % motifs.length]}" aria-hidden="true"></div>
           <div class="icon">${escapeHtml(service.icon || '•')}</div>
           <h3>${escapeHtml(service.title)}</h3>
           <p>${escapeHtml(service.description)}</p>
@@ -162,19 +164,6 @@
       const list = q('#problemy .problem-list');
       if (list && Array.isArray(data.problems.items)) {
         list.innerHTML = data.problems.items.map(item => `<li>${escapeHtml(item)}</li>`).join('');
-      }
-    }
-
-    if (data.testimonials) {
-      setSectionHead('#opinie .section-head', data.testimonials);
-      const wrap = q('#opinie .testimonial-grid');
-      if (wrap && Array.isArray(data.testimonials.items)) {
-        wrap.innerHTML = data.testimonials.items.map(item => `
-          <figure class="testimonial reveal show">
-            <blockquote>${escapeHtml(item.quote)}</blockquote>
-            <figcaption>${escapeHtml(item.author)}</figcaption>
-          </figure>
-        `).join('');
       }
     }
 
