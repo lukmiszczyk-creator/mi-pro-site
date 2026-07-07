@@ -62,18 +62,7 @@ collections:
               - { label: "Ikona / znak", name: "icon", widget: "string", required: false }
               - { label: "Tytuł", name: "title", widget: "string" }
               - { label: "Opis", name: "description", widget: "text" }
-          - label: "Realizacje"
-            name: "realizations"
-            widget: "object"
-            fields:
-              - { label: "Mały napis", name: "eyebrow", widget: "string" }
-              - { label: "Nagłówek", name: "title", widget: "string" }
-              - { label: "Opis", name: "description", widget: "text" }
-              - label: "Punkty"
-                name: "bullets"
-                widget: "list"
-                field: { label: "Tekst", name: "text", widget: "string" }
-          - label: "Ekspertyza"
+          - label: "Wsparcie techniczne"
             name: "expertise"
             widget: "object"
             fields:

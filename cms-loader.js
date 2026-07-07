@@ -41,6 +41,7 @@
     setText('.hero .lead', data.hero?.subtitle);
     setText('.hero-actions .btn-gold', data.hero?.primary_button);
     setText('.hero-actions .btn-outline', data.hero?.secondary_button);
+    setHref('.hero-actions .btn-outline', '#uslugi');
 
     const heroPoints = q('.hero-points');
     if (heroPoints && Array.isArray(data.hero?.points)) {
@@ -75,17 +76,6 @@
           <p>${escapeHtml(service.description)}</p>
         </article>
       `).join('');
-    }
-
-    if (data.realizations) {
-      setText('#realizacje .eyebrow', data.realizations.eyebrow);
-      setText('#realizacje h2', data.realizations.title);
-      const desc = q('#realizacje .featured-copy > p:not(.eyebrow)');
-      if (desc) desc.textContent = data.realizations.description || '';
-      const list = q('#realizacje .check-list');
-      if (list && Array.isArray(data.realizations.bullets)) {
-        list.innerHTML = data.realizations.bullets.map(item => `<li>${escapeHtml(item)}</li>`).join('');
-      }
     }
 
     if (data.expertise) {
