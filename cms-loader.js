@@ -48,10 +48,10 @@
     setText('.hero .eyebrow', data.hero?.eyebrow);
     setText('.hero h1', data.hero?.title);
     setText('.hero .lead', data.hero?.subtitle);
-    setText('.hero-actions .btn-gold', data.hero?.primary_button);
-    setText('.hero-actions .btn-outline', data.hero?.secondary_button);
-    setHref('.hero-actions .btn-gold', '#kontakt');
-    setHref('.hero-actions .btn-outline', '#uslugi');
+    setText('.hero-actions .btn-primary', data.hero?.primary_button);
+    setText('.hero-actions .btn-secondary', data.hero?.secondary_button);
+    setHref('.hero-actions .btn-primary', '#kontakt');
+    setHref('.hero-actions .btn-secondary', '#uslugi');
 
     const heroPoints = q('.hero-points');
     if (heroPoints && Array.isArray(data.hero?.points)) {
